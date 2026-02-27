@@ -43,11 +43,11 @@ public class Arrays {
 
     public void Averagenum (){
         int sum = 0;
-        int avg;
+        double avg = 0;
         for (int i = 0; i < nums.length; i++) {
             sum = sum +nums[i];
         }
-        avg = sum/10;
+        avg = sum/nums.length;
         System.out.println(avg);
         System.out.println(" ");
     }
@@ -70,6 +70,18 @@ public class Arrays {
             }
         }
         System.out.println(min);
+    }
+
+    public void maxindex(){
+        int max = nums[0];
+        int index = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i]>max){
+                max = nums[i];
+                index = i;
+            }
+        }
+        System.out.println(index);
     }
 
     }
