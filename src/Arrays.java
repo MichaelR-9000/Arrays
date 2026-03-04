@@ -23,6 +23,8 @@ public class Arrays {
         Averagenum();
         Maxnum();
         Minnum();
+        Greaterthan50();
+        maxindex();
 
     }
 
@@ -83,6 +85,16 @@ public class Arrays {
         }
         System.out.println(index);
     }
+    public void Greaterthan50(){
+    int count = nums[0];
+
+    for (int i = 0; i < nums.length; i++) {
+        if (nums[i] <= 59) {
+            count++;
+        }
+    }
+        System.out.println(count);
+}
 
     }
 
